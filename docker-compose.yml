@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+  nginx-php-:
+    image: localhost/nginx-php
+    networks:
+      - goodnet
+    ports:
+      - '8080:8080'
+
+networks:
+  goodnet:
